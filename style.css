@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 네비게이션 */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(10, 10, 20, 0.95);
+    z-index: 100;
+    padding: 16px 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+nav ul a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+nav ul a:hover {
+    color: #fff;
+}
+
+/* 히어로 */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #0a0a14 0%, #1a1a40 50%, #0d2137 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 16px;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    color: #aaa;
+    margin-bottom: 32px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 36px;
+    background: #4f8ef7;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+    background: #3a7de0;
+    transform: translateY(-2px);
+}
+
+/* 섹션 공통 */
+.section {
+    padding: 80px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+    color: #222;
+}
+
+.section p {
+    font-size: 1.05rem;
+    color: #555;
+}
+
+.section a {
+    color: #4f8ef7;
+}
+
+/* 다크 섹션 */
+.dark {
+    background: #f4f6fb;
+    max-width: 100%;
+    padding: 80px 40px;
+}
+
+.dark h2 {
+    color: #222;
+}
+
+/* 카드 */
+.cards {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 32px 28px;
+    width: 260px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: left;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.13);
+}
+
+.card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.tag {
+    background: #e8f0fe;
+    color: #4f8ef7;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+/* 푸터 */
+footer {
+    background: #0a0a14;
+    color: #666;
+    text-align: center;
+    padding: 24px;
+    font-size: 0.85rem;
+}
